@@ -80,7 +80,7 @@ const Page = () => (
   <>
     <Meta
       as={Head}
-      title="Don’t run your coding club alone"
+      title="Come for the skills, stay for the people."
       description="Hack Club is a global nonprofit network of high school makers & student-led coding clubs where young people build the agency, the network, & the technical talent to think big & do big things in the world."
       image="https://cloud-epiki4yvg.vercel.app/2020-09-09_drbp62kayjuyyy0ek89mf9fwcp5t4kuz.jpeg"
     />
@@ -112,13 +112,13 @@ const Page = () => (
         priority
       />
       
-        <Announcement
+{/*        <Announcement
           copy="Applications are now open"
           caption="It's feeling the like the end of the end of the world. Fall semester is coming"
           href="https://apply.hackclub.com"
           iconLeft="clubs"
           color="primary"
-        />
+        />*/}
       
       <SlideDown duration={768}>
         <Heading
@@ -143,9 +143,8 @@ const Page = () => (
               pb: 3
             }}
           >
-            Don’t run your coding&nbsp;club alone.
+            Come for the skills, stay for the people.
           </Text>
-          Make it a{' '}
           <Text
             as="span"
             sx={{
@@ -172,8 +171,9 @@ const Page = () => (
             mb: [3, 4]
           }}
         >
-          Hack Club is a nonprofit network of high school coding&nbsp;clubs and
-          makers around the world. <strong>Applications are now open.</strong>
+          Hack Club is a non-profit network of clubs for teenagers who make things with code and technology. 
+          <br/><br/>
+          Start one at your own high school and
         </Text>
         <Button
           as="a"
@@ -182,7 +182,7 @@ const Page = () => (
           target="_blank"
           rel="noopener"
         >
-          Apply now
+          APPLY NOW
         </Button>
       </FadeIn>
     </Box>
@@ -324,9 +324,9 @@ const Page = () => (
           By the students, for the students.
         </Heading>
         <Text as="p" variant="lead" sx={{ maxWidth: 'copyPlus', mx: 'auto' }}>
-          Learning to code is uniquely like gaining a superpower—turning you
-          from a consumer of technology into a creator. So it shouldn’t be
-          taught like a class—it should be a creative, inclusive space. To
+          Learning to code is like gaining a superpower — turning you
+          from a consumer of technology into a creator. It shouldn’t be
+          taught like a class — it should be a creative, inclusive space. To
           foster this environment,{' '}
           <Highlight>every&nbsp;Hack&nbsp;Club is student-led</Highlight> &
           members make self-directed projects.
@@ -571,109 +571,6 @@ const Page = () => (
             svg: { color: 'white' }
           }}
         />
-      </Container>
-    </Box>
-    <Box bg="snow" color="black" py={[5, 6]}>
-      <Container sx={{ textAlign: ['left', 'center'] }}>
-        <Text as="p" variant="eyebrow">
-          Next steps
-        </Text>
-        <Heading as="h2" variant="title">
-          Apply today to{' '}
-          <Text
-            as="span"
-            sx={{
-              borderRadius: 'default',
-              px: 2,
-              ml: [-2, 0],
-              whiteSpace: 'nowrap',
-              color: '#fb558e',
-              bg: '#6f31b7'
-            }}
-          >
-            start your club
-          </Text>
-          .
-        </Heading>
-        <Text as="p" variant="lead" mt={3} color="slate">
-          It’s all-online, free, & takes under an hour. We’ll help from there!
-        </Text>
-        <Grid
-          pt={[3, 4]}
-          pb={[4, 5]}
-          gap={[4, 3, 4]}
-          columns={[null, 3]}
-          sx={{
-            textAlign: 'left',
-            '> a, > div': {
-              borderRadius: 'extra',
-              boxShadow: 'elevated',
-              px: [3, null, 4],
-              py: [4, null, 5]
-            },
-            span: {
-              boxShadow:
-                '-2px -2px 6px rgba(255,255,255,0.125), inset 2px 2px 6px rgba(0,0,0,0.1), 2px 2px 8px rgba(0,0,0,0.0625)'
-            },
-            svg: { fill: 'currentColor' }
-          }}
-        >
-          <Card
-            as="a"
-            href="https://apply.hackclub.com/"
-            variant="interactive"
-            sx={{
-              background:
-                'linear-gradient(32deg, rgba(24, 218, 255, 0.9) 0%, rgba(91, 255, 205, 0.9) 100%)',
-              color: '#095365'
-            }}
-          >
-            <Feature
-              icon="send"
-              color="white"
-              name="1. Application"
-              desc="Start by telling us about your club & who’s leading it."
-            />
-          </Card>
-          <Card
-            sx={{
-              background:
-                'linear-gradient(to bottom, rgba(255, 212, 64, 0.9) 0%, rgba(255, 88, 88, 0.9) 100%)',
-              color: '#5d114c',
-              svg: { color: 'rgb(255,88,88)' }
-            }}
-          >
-            <Feature
-              icon="emoji"
-              color="white"
-              name="2. Onboarding call"
-              desc="Hop on a quick Zoom with someone from Hack Club HQ."
-            />
-          </Card>
-          <Card
-            sx={{
-              background: 'linear-gradient(-32deg, #6f31b7 14%, #fb558e 82%)',
-              color: 'white',
-              svg: { color: '#fb558e' }
-            }}
-          >
-            <Feature
-              icon="event-check"
-              color="white"
-              name="3. First meeting"
-              desc="Schedule your club’s first meeting & get going!"
-            />
-          </Card>
-        </Grid>
-        <Button
-          as="a"
-          href="https://apply.hackclub.com"
-          target="_blank"
-          rel="noopener"
-          variant="ctaLg"
-        >
-          Apply to Hack Club
-        </Button>
       </Container>
     </Box>
     <Footer
