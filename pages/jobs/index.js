@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from '@emotion/styled'
 import { Box, Container, Heading, Card, Text, Grid } from 'theme-ui'
 import Head from 'next/head'
@@ -118,6 +117,8 @@ const Page = () => (
             alt="Hack Clubbers hacking during the Hacker Zephyr trip"
             layout="fill"
             objectFit="cover"
+            placeholder="blur"
+            priority
           />
         </Box>
         <Container>
